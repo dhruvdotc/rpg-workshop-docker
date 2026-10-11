@@ -1,5 +1,9 @@
 # Robot Proving Grounds: Planning Demos in Docker
 
+![Race demo: A* (blue) and RRT (red) cars with their lookahead circles shrinking and growing as the L slider changes](demo.gif)
+
+*The Race demo with the lookahead slider being changed live. Each circle has radius L, and the cars follow their planned paths with Pure Pursuit.*
+
 This page is here for public viewing for the **Existential Robotics Planning Workshop on 29 October 2026**. It explains how to run the workshop's PyBullet planning demos on your own laptop with Docker. The demo source itself lives in the Existential Robotics lab's repository, so this repo only holds these install instructions.
 
 The simulator window shows up in your browser. You do not need to install PyBullet, conda or anything graphical, and you do not need to clone any repository. The only thing you need is Docker.
