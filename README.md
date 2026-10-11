@@ -4,6 +4,18 @@
 
 *The Race demo with the lookahead slider being changed live. Each circle has radius L, and the cars follow their planned paths with Pure Pursuit.*
 
+### F1TENTH: A* + Pure Pursuit
+
+![F1TENTH racecar following an A* path with Pure Pursuit, with the lookahead circle, target cross and driven trail](f1tenth_astar_purepursuit.gif)
+
+*The yellow circle has radius L. The magenta cross is the waypoint Pure Pursuit is aiming at, and the teal line is the route the car has driven. L is changed while it runs.*
+
+### MuSHR: RRT + Pure Pursuit
+
+![MuSHR car following an RRT path with Pure Pursuit, with the lookahead circle, target cross and driven trail](mushr_rrt_purepursuit.gif)
+
+*The same overlays on the MuSHR car following a jagged RRT path. A larger L cuts corners and smooths the ride, and a smaller L hugs the path.*
+
 This page is here for public viewing for the **Existential Robotics Planning Workshop on 29 October 2026**. It explains how to run the workshop's PyBullet planning demos on your own laptop with Docker. The demo source itself lives in the Existential Robotics lab's repository, so this repo only holds these install instructions.
 
 The simulator window shows up in your browser. You do not need to install PyBullet, conda or anything graphical, and you do not need to clone any repository. The only thing you need is Docker.
