@@ -21,7 +21,7 @@ Your graphics card is never used. PyBullet's GUI renders against a virtual displ
 2. Open a terminal (PowerShell on Windows, Terminal on Mac) and run the prebuilt image. It downloads on first use (about 1 GB), so please do this on good wifi **before** the workshop:
 
    ```bash
-   docker run --rm -p 6080:6080 -p 6081:6081 ghcr.io/existentialrobotics/rpg-demo:latest
+   docker run --rm -p 6080:6080 -p 6081:6081 ghcr.io/dhruvdotc/rpg-demo:latest
    ```
 
 3. Open http://localhost:6081 in your browser.
@@ -39,7 +39,7 @@ The page has a list of demos on the left and the simulator on the right. Click a
 If you would rather skip the launcher page, pass a command to `docker run`. The viewer is then at http://localhost:6080/vnc.html.
 
 ```bash
-docker run --rm -p 6080:6080 ghcr.io/existentialrobotics/rpg-demo:latest \
+docker run --rm -p 6080:6080 ghcr.io/dhruvdotc/rpg-demo:latest \
     python demo/f1tenth_demo.py --planner rrt --controller p
 ```
 
