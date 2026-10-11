@@ -28,6 +28,19 @@ Your graphics card is never used. PyBullet's GUI renders against a virtual displ
 
 The page has a list of demos on the left and the simulator on the right. Click any button to start that demo. Clicking another one stops the current run and starts the new one.
 
+## Using the page
+
+- **Lookahead slider (L).** Drag it while a demo runs to change Pure Pursuit's lookahead distance live, from 0.3 to 4.0 m. The P controller has no lookahead, so the slider does not change how it drives.
+- **Speed slider.** Changes every car's wheel speed live, from 3 to 30. The default of 13 is the original speed, and both controllers use it. Very high speeds can make a car overshoot turns, which is a good way to see why L matters.
+- **Circle and label.** Each car has a circle of radius L around it, with an "L = ... m" label. Pure Pursuit aims at the first point on the path that lies beyond the circle.
+- **Target marker.** A cross shows the waypoint the controller is aiming at right now.
+- **Trail.** The route the car has actually driven is drawn behind it, so you can compare it with the planned path.
+- **Live stats.** The side panel shows elapsed time, how far the car is from the planned path, and the steering angle. In the Race demo, A* and RRT each get their own line.
+- **Finish summary.** When a car reaches the goal, its panel shows the finish time and the mean and maximum distance from the path. The scene stays on screen until you start another demo.
+- **Restart.** "Restart this demo" runs the same planner and controller again on a new random layout.
+
+Try a small L (0.5) and a large one (3.0), at a slow and a fast speed, and compare the trail and the deviation numbers.
+
 ## What you can run
 
 - Race demo: A* and RRT routes raced side by side, with either the Pure Pursuit or the P controller.
